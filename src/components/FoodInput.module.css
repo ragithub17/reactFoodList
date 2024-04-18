@@ -1,0 +1,7 @@
+.FoodInput{
+  width: 100%;
+  margin: 10px 0px;
+  padding: 5px;
+  border: 2px solid rgb(37, 32, 32);
+  border-radius: 4px;
+}
