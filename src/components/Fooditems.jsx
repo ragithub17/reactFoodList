@@ -2,9 +2,9 @@ import { useState } from "react";
 import Item from "./Item";
 
 const Fooditems = ({ items }) => {
-  let [activeIems, setActiveItems] = useState([]);
+  let [activeItems, setActiveItems] = useState([]);
   let onBuyBtn = (item, event) => {
-    let newIems = [...activeIems, item];
+    let newIems = [...activeItems, item];
     setActiveItems(newIems);
   };
   return (
@@ -13,7 +13,7 @@ const Fooditems = ({ items }) => {
         <Item
           key={item}
           fooditem={item}
-          bought={activeIems.includes(item)}
+          bought={activeItems.includes(item)}
           handleOnClickBtn={(event) => {
             onBuyBtn(item, event);
           }}
